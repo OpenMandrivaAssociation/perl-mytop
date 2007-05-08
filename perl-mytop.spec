@@ -1,13 +1,13 @@
 %define name perl-mytop
 %define realname mytop
-%define version 1.4 
-%define release 2mdk
+%define version 1.6
+%define release %mkrel 1
 
 Summary: A clone of top for MySQL 3.22.x to 4.x
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source: http://jeremy.zawodny.com/mysql/mytop/%{name}-%{version}.tar.bz2
+Source: http://jeremy.zawodny.com/mysql/mytop/%{realname}-%{version}.tar.bz2
 URL: http://jeremy.zawodny.com/mysql/mytop/
 License: GPL
 Group: Databases
@@ -27,6 +27,8 @@ performance of a MySQL 3.22.x, 3.23.x, and 4.x server.
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
 make
+
+%check
 make test
 
 %install
