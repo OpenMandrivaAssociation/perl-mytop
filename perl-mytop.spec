@@ -42,5 +42,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %{_bindir}/mytop
-%{_mandir}/man1/%{realname}.1.bz2
+%{_mandir}/man1/%{realname}.*
 %doc README
