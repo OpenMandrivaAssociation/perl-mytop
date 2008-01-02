@@ -12,6 +12,7 @@ URL: http://jeremy.zawodny.com/mysql/mytop/
 License: GPL
 Group: Databases
 BuildArch:  noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Prefix: %{_prefix}
 BuildRequires: perl-Term-ReadKey
 Requires: perl-Term-ReadKey
