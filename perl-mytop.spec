@@ -8,7 +8,7 @@ Release:	5
 Summary:	A clone of top for MySQL 3.22.x to 4.x
 License:	GPL
 Group:		Databases
-Url:		http://jeremy.zawodny.com/mysql/mytop/
+Url:		https://jeremy.zawodny.com/mysql/mytop/
 Source0:	http://jeremy.zawodny.com/mysql/mytop/%{upstream_name}-%{upstream_version}.tar.bz2
 
 BuildRequires:	perl-devel
