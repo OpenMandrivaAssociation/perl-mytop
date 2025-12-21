@@ -11,6 +11,7 @@ Group:		Databases
 Url:		https://jeremy.zawodny.com/mysql/mytop/
 Source0:	http://jeremy.zawodny.com/mysql/mytop/%{upstream_name}-%{upstream_version}.tar.bz2
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Term::ReadKey)
 BuildArch:	noarch
