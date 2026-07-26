@@ -1,15 +1,13 @@
 %define upstream_name    mytop
-%define upstream_version 1.6
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	1.6
+Release:	7
 
 Summary:	A clone of top for MySQL 3.22.x to 4.x
 License:	GPL
 Group:		Databases
 Url:		https://jeremy.zawodny.com/mysql/mytop/
-Source0:	http://jeremy.zawodny.com/mysql/mytop/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://jeremy.zawodny.com/mysql/mytop/%{upstream_name}-%{version}.tar.bz2
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -22,7 +20,7 @@ Mytop is a console-based (non-gui) tool for monitoring the threads and overall
 performance of a MySQL 3.22.x, 3.23.x, and 4.x server.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -46,9 +44,7 @@ make test
 - rebuild
 
   + Jérôme Quelin <jquelin@mandriva.org>
-    - rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tvignaud@mandriva.com> 1.6-4mdv2009.0
+    - rebuild using %1.6 Thu Jul 31 2008 Thierry Vignaud <tvignaud@mandriva.com> 1.6-4mdv2009.0
 + Revision: 257934
 - rebuild
 
