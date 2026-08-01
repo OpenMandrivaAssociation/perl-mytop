@@ -1,7 +1,7 @@
 %define upstream_name    mytop
 Name:		perl-%{upstream_name}
 Version:	1.2
-Release:	1
+Release:	2
 
 Summary:	A clone of top for MySQL 3.22.x to 4.x
 License:	GPL
